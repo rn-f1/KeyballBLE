@@ -58,13 +58,22 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE      &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+        };
+
+        NUMS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
+            >;
         };
 
         FUNCTION {
@@ -114,7 +123,7 @@
             >;
         };
 
-        layer_6 {
+        AAA {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &trans        &trans        &trans        &trans
