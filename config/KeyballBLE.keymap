@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y      &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H      &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE      &kp ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE      &lt 8 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -94,6 +94,15 @@
             >;
         };
 
+        MOUSE {
+            bindings = <
+&trans    &trans     &trans     &trans     &trans                           &trans    &trans     &trans     &trans     &trans
+&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
+&trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans    &trans     &trans     &trans     &trans
+&trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
+            >;
+        };
+
         ARROW {
             bindings = <
 &kp ESCAPE      &trans  &trans  &trans  &trans                      &trans   &kp HOME     &kp UP_ARROW  &kp END        &trans
@@ -103,15 +112,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans    &trans     &trans     &trans     &trans                           &trans    &trans     &trans     &trans     &trans
-&mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &mkp LCLK      &trans  &mkp MB4  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5
-&trans    &trans     &trans     &trans     &trans    &mkp RCLK      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans     &trans    &trans         &trans  &trans                                     &trans
-            >;
         };
 
         SCROLL {
@@ -129,6 +129,15 @@
 &trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kt KP_N4  &trans      &bootloader     &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans     &trans      &trans          &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans     &trans  &trans        &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&kp TAB    &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &trans  &kp LEFT_ALT  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
