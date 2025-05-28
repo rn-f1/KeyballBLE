@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE      &lt 0 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y      &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H      &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE      &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -87,19 +87,19 @@
 
         SYMBOL {
             bindings = <
-&kp SQT      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION    &kp                          &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp PERCENT
-&kp AT_SIGN  &kp SEMICOLON      &kp DOLLAR       &kp MINUS       &kp PLUS       &kp      &kp  &kp POUND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp        &kp PIPE
-&kp          &kp                &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &kp      &kp  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp        &kp
-&kp          &kp                &kp              &kp             &kp            &kp      &kp  &kp                                                                    &kp
+&kp SQT      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION    &trans                             &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp PERCENT
+&kp AT_SIGN  &kp SEMICOLON      &kp DOLLAR       &kp MINUS       &kp PLUS       &trans      &trans  &kp POUND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &kp PIPE
+&trans       &trans             &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &trans      &trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans
+&trans       &trans             &trans           &trans          &trans         &trans      &trans  &trans                                                                 &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp  &kp  &kp  &kp                &kp      &kp HOME     &kp UP_ARROW  &kp END        &kp
-&kp             &kp  &kp  &kp  &kp  &kp      &kp  &kp TAB  &kp LEFT     &kp DOWN      &kp RIGHT      &kp
-&kp LEFT_SHIFT  &kp  &kp  &kp  &kp  &kp      &kp  &kp      &kp PAGE_UP  &kp           &kp PAGE_DOWN  &kp
-&kp             &kp  &kp  &kp  &kp  &kp      &kp  &kp                                                &kp
+&kp ESCAPE      &trans  &trans  &trans  &trans                      &trans   &kp HOME     &kp UP_ARROW  &kp END        &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &kp TAB  &kp LEFT     &kp DOWN      &kp RIGHT      &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &trans   &kp PAGE_UP  &trans        &kp PAGE_DOWN  &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
