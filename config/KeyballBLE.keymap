@@ -58,10 +58,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                          &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                          &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 LC(CAPSLOCK)  &lt 3 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE      &lt 8 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                       &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                       &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 LA(GRAVE)  &lt 3 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE      &lt 8 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -89,7 +89,7 @@
             bindings = <
 &kp SQT      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION    &trans                             &kp BACKSLASH  &kp LBKT              &kp RIGHT_BRACKET      &kp TILDE  &kp PERCENT
 &kp AT_SIGN  &kp SEMICOLON      &kp DOLLAR       &kp MINUS       &kp PLUS       &trans      &trans  &kp POUND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp PIPE
-&trans       &trans             &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &trans      &trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans
+&kp GRAVE    &trans             &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &trans      &trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans
 &trans       &trans             &trans           &trans          &trans         &trans      &trans  &trans                                                                 &trans
             >;
         };
