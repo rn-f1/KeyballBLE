@@ -47,14 +47,6 @@
 
             label = "NEW_MACRO";
         };
-
-        ctrl_c: ctrl_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&macro_press>;
-
-            label = "CTRL_C";
-        };
     };
 
     behaviors {
@@ -83,7 +75,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R    &kp T                                                              &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F    &lt 1 G      &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S         &kp D         &kp F    &lt 1 G      &lt_to_layer_0 7 CARET             &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V    &lt 2 B      &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &henkan  &lt 3 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE      &lt 8 ENTER                             &kp DEL
             >;
@@ -111,10 +103,10 @@
 
         SYMBOL {
             bindings = <
-&kp SQT      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION    &kp EQUAL                          &kp BACKSLASH  &kp LBKT              &kp RIGHT_BRACKET      &kp TILDE      &kp PERCENT
-&kp AT_SIGN  &kp SEMICOLON      &kp DOLLAR       &kp MINUS       &kp PLUS       &trans      &trans  &kp POUND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK      &kp PIPE
-&kp GRAVE    &trans             &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &trans      &trans  &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&trans       &trans             &trans           &trans          &trans         &trans      &trans  &trans                                                                     &trans
+&kp SQT      &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION    &kp EQUAL                             &kp BACKSLASH  &kp LBKT              &kp RIGHT_BRACKET      &kp TILDE      &kp PERCENT
+&kp AT_SIGN  &kp SEMICOLON      &kp DOLLAR       &kp MINUS       &kp PLUS       &trans      &kp CARET  &kp POUND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK      &kp PIPE
+&kp GRAVE    &trans             &kp COLON        &kp UNDERSCORE  &kp BACKSLASH  &trans      &trans     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+&trans       &trans             &trans           &trans          &trans         &trans      &trans     &trans                                                                     &trans
             >;
         };
 
@@ -129,10 +121,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans        &trans     &trans          &trans                      &trans   &kp HOME     &kp UP_ARROW  &kp END        &trans
-&trans          &trans        &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans      &trans  &kp TAB  &kp LEFT     &kp DOWN      &kp RIGHT      &trans
-&kp LEFT_SHIFT  &trans        &trans     &trans          &trans  &trans      &trans  &trans   &kp PAGE_UP  &trans        &kp PAGE_DOWN  &trans
-&trans          &kp LEFT_WIN  &trans     &trans          &trans  &trans      &trans  &trans                                             &trans
+&kp ESCAPE      &trans        &trans     &kp LEFT_WIN    &trans                            &trans   &kp HOME     &kp UP_ARROW  &kp END        &trans
+&trans          &trans        &kp RCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &trans      &trans  &kp TAB  &kp LEFT     &kp DOWN      &kp RIGHT      &trans
+&kp LEFT_SHIFT  &trans        &trans     &trans          &trans        &trans      &trans  &trans   &kp PAGE_UP  &trans        &kp PAGE_DOWN  &trans
+&trans          &kp LEFT_WIN  &trans     &trans          &trans        &trans      &trans  &trans                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -158,10 +150,10 @@
 
         layer_8 {
             bindings = <
-&kp ESCAPE  &trans       &trans        &trans  &trans                      &trans  &trans     &trans     &trans  &trans
-&kp TAB     &kp LS(TAB)  &trans        &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
-&kp LSHFT   &trans       &kp K_COPY    &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans  &trans
-&kp LCTRL   &trans       &kp LEFT_ALT  &trans  &trans  &trans      &trans  &trans                                &trans
+&kp ESCAPE  &trans       &trans        &trans     &trans                      &trans  &trans     &trans     &trans  &trans
+&kp TAB     &kp LS(TAB)  &trans        &trans     &trans  &trans      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&kp LSHFT   &trans       &kp LC(C)     &kp LC(V)  &trans  &trans      &trans  &trans  &trans     &trans     &trans  &trans
+&kp LCTRL   &trans       &kp LEFT_ALT  &trans     &trans  &trans      &trans  &trans                                &trans
             >;
         };
     };
